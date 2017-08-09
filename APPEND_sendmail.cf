@@ -1,0 +1,12 @@
+# MAILGUN
+define(`SMART_HOST', `smtp.mailgun.org')dnl
+FEATURE(`authinfo', `hash /etc/mail/authinfo/mailgun-auth')dnl
+# optional, see http://www.sendmail.org/m4/features.html before enabling:
+# FEATURE(`accept_unresolvable_domains')dnl
+# FEATURE(`accept_unqualified_senders')dnl
+# execute: make -C /etc/mail
+## Mailgun
+MAILER_DEFINITIONS
+MAILER(`local')dnl
+MAILER(`smtp')dnl
+
