@@ -10,6 +10,7 @@ ditto
 
 1. Append configuration to sendmail.mc
 
+
     ## Mailgun
     define(`SMART_HOST', `smtp.mailgun.org')dnl
     FEATURE(`authinfo', `hash /etc/mail/authinfo/mailgun-auth')dnl
@@ -21,6 +22,7 @@ ditto
     MAILER_DEFINITIONS
     MAILER(`local')dnl
     MAILER(`smtp')dnl
+
 
 1. Create the authentication file at `/etc/mail/authinfo/mailgun-auth`
 1. run `make authinfo`
